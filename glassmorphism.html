@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #2a2a2a;
+        position: relative;
+        height: 100vh;
+        color: white;
+      }
+      .roboto-mono {
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .d-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .c1 {
+        width: 150px;
+        height: 150px;
+        border-radius: 30% 80%;
+        position: absolute;
+        background: linear-gradient(orangered, yellow);
+        top: 80vh;
+        left: 50px;
+      }
+      .c2 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        background: linear-gradient(orangered, green);
+        top: 50px;
+        left: 50px;
+        border-radius: 30% 80%;
+      }
+      .c3 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        background: linear-gradient(orangered, pink);
+        top: 50px;
+        left: 400px;
+        border-radius: 80% 30%;
+      }
+      .stack {
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(20px);
+      }
+      .cc {
+        background: rgba(255, 255, 255, 0.315);
+        position: absolute;
+        width: 450px;
+        height: 250px;
+        padding: 1rem;
+        border: 1px solid white;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(128, 128, 128, 0.644);
+        backdrop-filter: 10px;
+      }
+      .title {
+        font-size: 1.5rem;
+      }
+      .num {
+        font-size: 2rem;
+        margin-top: 5rem;
+        letter-spacing: 1px;
+        font-weight: bolder;
+      }
+      .detail {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+      }
+      .top {
+        font-size: 0.7rem;
+      }
+      .btm {
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+      }
+      .detail > div:last-child {
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+      .c4 {
+        background: linear-gradient(
+          rgba(255, 192, 203, 0.706),
+          rgba(255, 0, 0, 0.687)
+        );
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        /* background: linear-gradient(orangered, pink); */
+        top: calc(50% - 200px);
+        right: calc(50% - 300px);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body class="d-center">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="stack"></div>
+    <div class="c4"></div>
+    <div class="cc">
+      <div class="title">Credit Card</div>
+      <div class="num roboto-mono">4242 4242 1212 2121</div>
+      <div class="detail">
+        <div>
+          <div class="top">Credit Card</div>
+          <div class="btm">Dinesh Budhathoki</div>
+        </div>
+        <div>
+          <div class="top">Expiry Date</div>
+          <div class="btm">01/25</div>
+        </div>
+        <div>VISA</div>
+      </div>
+    </div>
+  </body>
+</html>
